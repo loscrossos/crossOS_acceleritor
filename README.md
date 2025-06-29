@@ -107,7 +107,23 @@ Basically the procedure is as follows to accelerite any project:
 enjoy!
 
 
-https://civitai.com/models/886410/flux1-dev-consistent-character-fast-generation-pulid-controlnet-turbo-alpha-lora-torch-compilestea
+
+
+## Known issues
+
+**Windows xFormers v0.0.31**
+
+as of 29JUN2025 the current xFormers version 0.0.31 has a bug on windows. you can fix it by issuing these commands once from the "Wan2GP" installation folder above.
+
+```
+ren ".env_win\Lib\site-packages\xformers\pyd" "_C.pyd"
+ren ".env_win\Lib\site-packages\xformers\flash_attn_3\pyd" "_C.pyd"
+```
+
+if you get no error or any message at all then it worked.
+
+
+
 
 # Troubleshooting
 
@@ -117,6 +133,8 @@ https://civitai.com/models/886410/flux1-dev-consistent-character-fast-generation
 
 
 - if you have problems post an issue with as much of the console errors as possible, your system info (OS, Python versiom, Pytorch version, target Project) and ideally an example workflow so i can reproduce the error. will do my best to help
+
+
 
 
 # Roadmap
