@@ -108,6 +108,11 @@ enjoy!
 
 
 
+## Want to help?
+
+Feel free to contribute with installation guides in the issues section for projects that you accelerated with Acceleritor! I will can integrate them in the tutorial section.
+
+
 
 ## Known issues
 
