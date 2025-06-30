@@ -29,6 +29,10 @@ This setup will:
 - All libraries are compiled on the same code base by me to they all are tuned perfectly to each other!
 - For project developers: you can use these files to setup your project knowing MacOS, Windows and MacOS users will have the latest version of the accelerators.
 
+what is currently NOT supported:
+- Any other GPU than Nvidia (AMD, Intel, etc) as these accelerators are nvidia only or the most part.
+- NVidia 10xx and 20xx and older... sorry guys :( the acceleratros do not support you in the new versions.
+
 # Usage
 
 The `acceleritor*.txt` files in this project are crafted to contain full sets of accelerator libraries that integrate well with each other. You can use the files in this manners:
