@@ -33,6 +33,11 @@ what is currently **NOT supported**:
 - Any other GPU than Nvidia (AMD, Intel, etc) as these accelerators are nvidia only or the most part.
 - NVidia 10xx and 20xx and older... sorry guys :( the accelerators do not support you in the new versions.
 
+
+### News
+- 2025.07.03: Sageattention2++: v.2.2.0
+
+
 # Usage
 
 The `acceleritor*.txt` files in this project are crafted to contain full sets of accelerator libraries that integrate well with each other. You can use the files in this manners:
