@@ -141,9 +141,10 @@ if you get no error or any message at all then it worked.
 
 # Troubleshooting
 
-- Sage-Attention: For people who might be getting the error: with tcc and includes in the logs: They are missing the python headers.
+- Sage-Attention: For people who might be getting the error: with tcc and includes or someting along "python.h missing" in the logs: this is due to you not having Python properly installed. This comes from having e.g. comfyportable which brings its own python but its missing files.
  - you need to install python 3.12 on your system (not from conda!)
  - alternatively you can get the headers and copy them in the venv then it should work fine. you can take it from the main python 312 install. installing as described above should suffice.
+ - you can follow this guide: https://github.com/woct0rdho/triton-windows?tab=readme-ov-file#8-special-notes-for-comfyui-with-embeded-python
 
 
 - if you have problems post an issue with as much of the console errors as possible, your system info (OS, Python versiom, Pytorch version, target Project) and ideally an example workflow so i can reproduce the error. will do my best to help
