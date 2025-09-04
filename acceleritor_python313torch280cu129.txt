@@ -24,7 +24,7 @@ triton==3.4.0 ; sys_platform == 'linux'
 
 #FLASH ATTENTION************************************************************
 #Needs pytorch
-https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.3/flash_attn-2.8.3+cu129torch2.8.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32' #egg2.8.0
+https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.2/flash_attn-2.8.2+cu129torch2.8.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32' #egg2.8.0
 https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' #egg2.8.0
 
 
