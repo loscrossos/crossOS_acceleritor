@@ -102,7 +102,7 @@ Basically the procedure is as follows to accelerite any project:
 
 1. Clone your project
 2. create a venv and activate it.
-3. if existent: remove any references to torch/torchvision/Torchaudio from the existing requirement.txt
+3. if existent: remove any references to torch/torchvision/Torchaudio (only those 3. e.g. "torchsde" can stay) from the existing requirement.txt
 4. install the acceleritor file
 5. install the remaining requirements from your project
 6. profit???
