@@ -1,0 +1,56 @@
+#LosCrossOS - Acceleritor: check https://github.com/loscrossos/crossOS_acceleritor for updates
+
+#PYTORCH*********************************************************************
+--extra-index-url=https://download.pytorch.org/whl/nightly/cpu ; sys_platform  == 'darwin'
+--extra-index-url=https://download.pytorch.org/whl/cu129 ; sys_platform  != 'darwin'
+torch==2.8.0 ; sys_platform  != 'darwin'
+torch ; sys_platform  == 'darwin'
+torchsde
+torchvision
+torchaudio
+
+
+#XFORMERS*******************************************************************
+#needs pytorch
+xformers ; sys_platform  != 'darwin'
+
+
+# TRITON********************************************************************
+# Needs Pytorch
+https://github.com/woct0rdho/triton-windows/releases/download/empty/triton-3.3.0-py3-none-any.whl ; sys_platform == 'win32' # tw
+triton-windows==3.4.0.post20 ; sys_platform == 'win32' # tw
+triton==3.4.0 ; sys_platform == 'linux'
+
+
+#FLASH ATTENTION************************************************************
+#Needs pytorch
+https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.3/flash_attn-2.8.3+cu129torch2.8.0-cp312-cp312-win_amd64.whl ; sys_platform == 'win32' and python_version == "3.12" #egg2.8.0
+https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.12" #egg2.8.0
+https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.2/flash_attn-2.8.2+cu129torch2.8.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.13" #egg2.8.0
+https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg2.8.0
+
+#SAGE ATTENTION*************************************************************
+#Needs Pytorch, Triton
+https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl ; sys_platform == 'win32'  #egg:v2.2.2
+https://github.com/loscrossos/lib_sageattention/releases/download/v2.2.0/sageattention-2.2.0+cu129torch280-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.12" #egg:v2.2.2
+https://github.com/loscrossos/lib_sageattention/releases/download/v2.2.0/sageattention-2.2.0+cu129torch280-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg:v2.2.2
+
+accelerate >= 1.1.1
+
+
+
+
+#CAUSAL CONV1D**************************************************************
+#needs: pytorch
+https://github.com/loscrossos/lib_causal-conv1d/releases/download/v1.5.2/causal_conv1d-1.5.2+cu129torch2.8.0-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux'  and python_version == "3.12"  #egg1.5.2
+https://github.com/loscrossos/lib_causal-conv1d/releases/download/v1.5.2/causal_conv1d-1.5.2+cu129torch2.8.0-cp312-cp312-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.12" #egg1.5.2
+https://github.com/loscrossos/lib_causal-conv1d/releases/download/v1.5.2/causal_conv1d-1.5.2+cu129torch2.8.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.13" #egg1.5.2
+https://github.com/loscrossos/lib_causal-conv1d/releases/download/v1.5.2/causal_conv1d-1.5.2+cu129torch2.8.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux'  and python_version == "3.13" #egg1.5.2
+
+#MAMBA SSD****************************
+#Needs Pytorch, FlashAttention, Triton, causal_conv1d
+https://github.com/loscrossos/lib_mamba/releases/download/v2.2.5/mamba_ssm-2.2.5+cu129torch2.8.0-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux'  and python_version == "3.12" #egg2.2.5
+https://github.com/loscrossos/lib_mamba/releases/download/v2.2.5/mamba_ssm-2.2.5+cu129torch2.8.0-cp312-cp312-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.12" #egg2.2.5
+https://github.com/loscrossos/lib_mamba/releases/download/v2.2.5/mamba_ssm-2.2.5+cu129torch2.8.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.13" #egg2.2.5
+https://github.com/loscrossos/lib_mamba/releases/download/v2.2.5/mamba_ssm-2.2.5+cu129torch2.8.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux'  and python_version == "3.13" #egg2.2.5
+
