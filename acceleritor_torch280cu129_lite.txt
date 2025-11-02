@@ -1,7 +1,7 @@
 #LosCrossOS - Acceleritor: check https://github.com/loscrossos/crossOS_acceleritor for updates
 
 #PYTORCH*********************************************************************
---extra-index-url=https://download.pytorch.org/whl/nightly/cpu ; sys_platform  == 'darwin'
+# --extra-index-url=https://download.pytorch.org/whl/nightly/cpu ; sys_platform  == 'darwin'
 --extra-index-url=https://download.pytorch.org/whl/cu129 ; sys_platform  != 'darwin'
 torch==2.8.0 ; sys_platform  != 'darwin'
 torch ; sys_platform  == 'darwin'
