@@ -35,6 +35,9 @@ what is currently **NOT supported**:
 
 
 ### News
+- 2025.11.03: new:
+    - acceleritor_torch280cu129_xx.txt: is fully comfy compatible. aligned flashatt versions to workaround xformers current limitation 
+    - acceleritor_torch280cu130_xx.txt: new versions for CUDA13. Currently xformers is broken due to xformers not being CUDA13 compatible. update will follow
 - 2025.07.03: Sageattention2++: v.2.2.0
 
 
