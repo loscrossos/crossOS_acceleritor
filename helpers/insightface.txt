@@ -1,0 +1,1 @@
+ https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp313-cp313-win_amd64.whl ; platform_system == "Windows" and python_version == "3.13"
