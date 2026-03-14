@@ -28,7 +28,7 @@ triton==3.6.0 ; sys_platform == 'linux'
 #python3.13
 https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.3/flash_attn-2.8.3+cu130torch2.10.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32'  and python_version == "3.13" #egg2.8.0
 
-## TODO https://github.com/loscrossos/lib_compileguides/releases/download/2025.11/flash_attn-2.8.2+cu130torch2.9.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg2.8.0
+https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.3/flash_attn-2.8.3+cu130torch2.10.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg2.8.0
 
 
 
@@ -38,12 +38,12 @@ https://github.com/loscrossos/lib_flashattention/releases/download/v2.8.3/flash_
 #Needs Pytorch, Triton
 https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post4/sageattention-2.2.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl ; sys_platform == 'win32'  #egg:v2.2.2
 #python3.13
-##TODO https://github.com/loscrossos/lib_compileguides/releases/download/2025.11/sageattention-2.2.0+cu130torch2.9.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg:v2.2.2
+https://github.com/loscrossos/lib_sageattention/releases/download/v2.2.0/sageattention-2.2.0+cu130torch2.10.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg:v2.2.2
 
 
 #Sage3 Blackwell
 https://github.com/loscrossos/lib_sageattention/releases/download/v1.0.0/sageattn3-1.0.0+cu130torch2.10.0-cp313-cp313-win_amd64.whl ; sys_platform == 'win32'  #egg:v2.2.2
-##TODO ; sys_platform == 'linux' and python_version == "3.13"  #egg:v2.2.2
+https://github.com/loscrossos/lib_sageattention/releases/download/v1.0.0/sageattn3-1.0.0+cu130torch2.10.0-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and python_version == "3.13"  #egg:v2.2.2
 
 
 accelerate >= 1.1.1
